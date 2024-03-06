@@ -1,0 +1,56 @@
+/* TaskItem.css */
+.task-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #3a04fa, #ffcccc);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .task-item.completed {
+    background-color: crimson;
+    text-decoration: line-through;
+  }
+  
+  .task-item-content {
+    flex-grow: 1;
+  }
+  
+  .task-item-buttons {
+    display: flex;
+    gap: 20px;
+
+  }
+  
+  .task-item button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-item button:hover {
+    background-color: #ffaaaa;
+  }
+  
+  .task-item button.delete-btn {
+    background-color: crimson;
+    color: white;
+    
+  }
+  
+  .task-item button.toggle-btn {
+    background-color: skyblue;
+    color: white;
+  }
+  
